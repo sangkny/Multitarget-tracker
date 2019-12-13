@@ -43,9 +43,9 @@ int main(int argc, char** argv)
     std::cout << (cv::ocl::useOpenCL() ? "OpenCL is enabled" : "OpenCL not used") << std::endl;
 
     int exampleNum = parser.get<int>("example");
-    int asyncPipeline = parser.get<int>("async");
+	int asyncPipeline = 0; // parser.get<int>("async");
 
-    switch (exampleNum)
+    switch (5/*exampleNum*/)
     {
     case 0:
         MouseTracking(parser);
